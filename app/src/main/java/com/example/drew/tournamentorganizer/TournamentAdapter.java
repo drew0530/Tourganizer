@@ -23,7 +23,7 @@ public class TournamentAdapter extends RecyclerView.Adapter<TournamentAdapter.To
 
     public TournamentAdapter(Context ctx, List<TournamentCard> cardList) {
         this.ctx = ctx;
-        this.tournamentList = tournamentList;
+        this.tournamentList = cardList;
     }
 
     @Override
