@@ -3,6 +3,7 @@ package com.example.drew.tournamentorganizer;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +17,7 @@ import java.util.List;
  * Created by Drew on 10/10/18.
  */
 
-public class TournamentAdapter extends RecyclerView.Adapter<TournamentAdapter.TournamentViewHolder> {
+public class TournamentAdapter extends RecyclerView.Adapter<TournamentAdapter.TournamentViewHolder> implements View.OnClickListener{
 
     private Context ctx;
     private List<TournamentCard> tournamentList;
@@ -44,12 +45,17 @@ public class TournamentAdapter extends RecyclerView.Adapter<TournamentAdapter.To
 
         holder.imageViewTeam1.setImageDrawable(ctx.getResources().getDrawable(tournament.getTeam1Image()));
         holder.imageViewTeam2.setImageDrawable(ctx.getResources().getDrawable(tournament.getTeam2Image()));
-
     }
 
     @Override
     public int getItemCount() {
         return tournamentList.size();
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(ctx, NewTournamentActivity.class);
+        ctx.startActivity(intent);
     }
 
     class TournamentViewHolder extends RecyclerView.ViewHolder {

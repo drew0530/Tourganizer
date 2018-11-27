@@ -33,5 +33,4 @@ public class TeamListFragment extends Fragment {
             }
         });
     }
-
 }

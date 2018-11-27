@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -47,27 +48,27 @@ public class TournamentListFragment extends Fragment{
                 "Team Orange",
                 "Team Green",
                 "1-14-2019",
-                R.drawable.green_team,
-                R.drawable.orange_team
+                R.drawable.orange_team,
+                R.drawable.green_team
         ));
 
         // Adding mock data to display in RecyclerView
         cardList.add(new TournamentCard(
-                "ExampleTournament1",
+                "ExampleTournament4",
                 "Team Red",
-                "Team Blue",
-                "12-28-2018",
+                "Team Orange",
+                "3-14-2019",
                 R.drawable.red_team,
-                R.drawable.blue_team
+                R.drawable.orange_team
         ));
 
         cardList.add(new TournamentCard(
-                "ExampleTournament2",
-                "Team Orange",
+                "ExampleTournament5",
+                "Team Blue",
                 "Team Green",
-                "1-14-2019",
-                R.drawable.green_team,
-                R.drawable.orange_team
+                "5-30-2019",
+                R.drawable.blue_team,
+                R.drawable.green_team
         ));
 
         //creating recyclerview adapter
@@ -83,11 +84,24 @@ public class TournamentListFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         configureFAB();
+//        configureTCards();
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    //function to instantiate the onclick for tournament cards
+    private void configureTCards() {
+        CardView tCards = getActivity().findViewById(R.id.cardView);
+        tCards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), TournamentInfoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //function to instantiate the Floating action button
