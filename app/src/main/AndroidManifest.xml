@@ -21,7 +21,9 @@
         <activity android:name=".NewTournamentActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".NewTeamActivity"
-            android:windowSoftInputMode="adjustResize" ></activity>
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".TournamentInfoActivity"/>
+
     </application>
 
 </manifest>

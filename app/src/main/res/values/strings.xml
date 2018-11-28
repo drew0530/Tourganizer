@@ -1,10 +1,11 @@
 <resources>
-    <string name="app_name">Tournament Organizer</string>
+    <string name="app_name">Tourganizer</string>
     <string name="title_tournaments">Tournaments</string>
     <string name="title_settings">Settings</string>
     <string name="title_teams">Teams</string>
     <string name="title_activity_settings">Settings</string>
     <string name="field_tournament_name">Tournament Name</string>
+    <string name="action_show_bracket">Show Bracket</string>
 
     <string-array name="list_tournament_types">
         <item>Single Elimination</item>
