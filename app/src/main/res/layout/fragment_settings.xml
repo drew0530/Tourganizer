@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:padding="8dp">
 
-    <Button
+    <TextView
         android:id="@+id/info_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test Tournament Info" />
+        android:text="@string/title_settings" />
 
 </LinearLayout>
