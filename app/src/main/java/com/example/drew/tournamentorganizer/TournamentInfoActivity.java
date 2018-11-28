@@ -33,7 +33,7 @@ public class TournamentInfoActivity extends AppCompatActivity {
             case R.id.action_bracket:
                 // User chose the "Bracket" item, show the tournament bracket UI...
                 // NEED TO PASS DATA TO THIS INTENT
-                Intent intent = new Intent(getParent(), TournamentInfoActivity.class);
+                Intent intent = new Intent(TournamentInfoActivity.this, TournamentBracket4Activity.class);
                 startActivity(intent);
                 return true;
 

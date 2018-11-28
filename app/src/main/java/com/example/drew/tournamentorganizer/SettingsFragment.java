@@ -25,7 +25,7 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        TextView settings_text = getActivity().findViewById(R.id.settings_text);
+        TextView settings_text = getActivity().findViewById(R.id.info_test);
         settings_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

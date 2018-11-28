@@ -23,6 +23,8 @@
         <activity android:name=".NewTeamActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".TournamentInfoActivity"/>
+        <activity android:name=".TournamentBracket4Activity" />
+        <activity android:name=".TournamentBracket8Activity" />
 
     </application>
 

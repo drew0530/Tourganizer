@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tournament_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tournament Name"
+        android:layout_marginBottom="16dp"
+        android:textSize="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,2,4,6">
+
+        <!--Row 1-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 2-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView android:layout_width="8dp"
+                android:background="@color/lightgrey"
+                android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 3-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 4-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp" />
+
+            <TextView android:layout_height="24dp" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 5-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 6-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 7-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 8-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp" />
+
+            <TextView android:layout_height="24dp" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <!--Row 9-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 10-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView android:layout_width="8dp"
+                android:background="@color/lightgrey"
+                android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 11-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 12-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp" />
+
+            <TextView android:layout_height="24dp" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView android:layout_height="24dp"
+                android:layout_width="8dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 13-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 14-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+
+        <!--Row 15-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="24dp"
+                android:background="@color/lightgrey"
+                android:text="test"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="24dp"
+                android:background="@color/lightgrey" />
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+
+            <TextView android:layout_height="24dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
