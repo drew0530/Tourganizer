@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:launchMode="singleTop"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +23,17 @@
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".NewTeamActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".TournamentInfoActivity"/>
-        <activity android:name=".TournamentBracket4Activity" />
+        <activity android:name=".TournamentInfoActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".TournamentBracket4Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TournamentInfoActivity" />
+        </activity>
         <activity android:name=".TournamentBracket8Activity" />
 
     </application>

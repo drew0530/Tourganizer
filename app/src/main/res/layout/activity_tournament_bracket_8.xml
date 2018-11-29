@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <!-- TODO Could not implement the 8-man bracket system, since there are too many views in the -->
+     <!-- TODO layout, would need more time to change our bracket display to a Canvas-based implementation. -->
+
     <TextView
         android:id="@+id/tournament_name"
         android:layout_width="wrap_content"

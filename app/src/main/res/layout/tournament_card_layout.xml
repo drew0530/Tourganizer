@@ -36,7 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/dateTime">
+                android:layout_below="@+id/dateTime"
+                android:paddingTop="8dp">
 
                 <ImageView
                     android:id="@+id/team1Image"

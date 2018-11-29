@@ -38,7 +38,7 @@ public class TournamentAdapter extends RecyclerView.Adapter<TournamentAdapter.To
 
     @Override
     public void onBindViewHolder(TournamentViewHolder holder, int position) {
-        TournamentCard tournament = tournamentList.get(position);
+        final TournamentCard tournament = tournamentList.get(position);
 
         holder.textViewTournamentName.setText(tournament.getTournamentName());
         holder.textViewDate.setText(String.valueOf(tournament.getDate()));
@@ -53,6 +53,12 @@ public class TournamentAdapter extends RecyclerView.Adapter<TournamentAdapter.To
             public void onClick(View view) {
                 Intent intent = new Intent(ctx, TournamentInfoActivity.class);
                 // !!!! use intent.putExtra("extraName", value) for each thing you want to pass to the next activity here!
+                intent.putExtra("TOURNAMENT_NAME", tournament.getTournamentName());
+                intent.putExtra("DATE", String.valueOf(tournament.getDate()));
+                intent.putExtra("TEAM_1_NAME", tournament.getTeam1Name());
+                intent.putExtra("TEAM_2_NAME", tournament.getTeam2Name());
+                intent.putExtra("TEAM_1_IMAGE", tournament.getTeam1Image());
+                intent.putExtra("TEAM_2_IMAGE", tournament.getTeam2Image());
                 ctx.startActivity(intent);
             }
         });
