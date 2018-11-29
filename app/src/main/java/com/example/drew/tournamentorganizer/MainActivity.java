@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         navigation.setOnNavigationItemSelectedListener(this);
 
         loadFragment(new TournamentListFragment());
+        TeamDatabase newDB = new TeamDatabase(this);
+
     }
 
     private boolean loadFragment(Fragment fragment) {
