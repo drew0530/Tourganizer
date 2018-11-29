@@ -32,8 +32,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder
         TeamCard team = teamList.get(position);
 
         holder.textViewTeamName.setText(team.getTeamName());
-        holder.textViewRating.setText(String.valueOf(team.getRating()));
-        holder.textViewTeamCaptain.setText(team.getTeamCaptain());
+        holder.textViewComments.setText(team.getTeamComments());
 
     }
 
@@ -50,14 +49,13 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder
 
     class TeamViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textViewTeamName, textViewRating, textViewTeamCaptain;
+        TextView textViewTeamName, textViewComments;
 
         public TeamViewHolder(View itemView) {
             super(itemView);
 
-            textViewTeamName = itemView.findViewById(R.id.teamName);
-            textViewRating = itemView.findViewById(R.id.matchRating);
-            textViewTeamCaptain = itemView.findViewById(R.id.teamCaptain);
+            textViewTeamName = itemView.findViewById(R.id.team_name);
+            textViewComments = itemView.findViewById(R.id.team_comments);
         }
     }
 }
