@@ -35,10 +35,12 @@ public class TeamListFragment extends Fragment {
 
         // Adding mock data to display in RecyclerView
         //TODO: make this a loop to add team cards
+        for(int i = 0; i < 10; i++){
             cardList.add(new TeamCard(
-                "Gay Boys for 1",
-                "Drew is Gay"
+                    "Team " + i,
+                    "Example Comment"
             ));
+        }
 
 
         //creating recyclerview adapter
