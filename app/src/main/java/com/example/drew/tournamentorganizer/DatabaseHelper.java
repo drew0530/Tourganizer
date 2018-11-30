@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class TeamDatabase extends SQLiteOpenHelper{
+public class DatabaseHelper extends SQLiteOpenHelper{
     public static final String DATABASE_NAME = "tournamentDatabase.db";
     //First table
     /*
@@ -55,7 +55,7 @@ public class TeamDatabase extends SQLiteOpenHelper{
 //    public static final String TOUR8_19 = "team8Status";
 //    public static final String TABLE_NAME = "teamTable";
 
-    public TeamDatabase(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 
@@ -63,7 +63,7 @@ public class TeamDatabase extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase db) {
         //Formatted for readability
         db.execSQL("create table " + TEAMS_TABLE_NAME + " (" +
-                "TeamID BIGINT PRIMARY KEY AUTOINCREMENT, " +
+                "TeamID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "TeamName TEXT,  " +
                 "TeamComments TEXT" +
                 ")"
@@ -71,12 +71,12 @@ public class TeamDatabase extends SQLiteOpenHelper{
 
         //Formatted for readability
         db.execSQL("create table " + TOURNAMENTS_4_TABLE_NAME + " (" +
-                "TournamentID BIGINT PRIMARY KEY AUTOINCREMENT, " +
+                "TournamentID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "TournamentName TEXT, " +
-                "Team1 BIGINT, " +
-                "Team2 BIGINT, " +
-                "Team3 BIGINT, " +
-                "Team4 BIGINT, " +
+                "Team1 INTEGER, " +
+                "Team2 INTEGER, " +
+                "Team3 INTEGER, " +
+                "Team4 INTEGER, " +
                 "TournamentStyle TEXT, " +
                 "FOREIGN KEY (Team1) REFERENCES Teams(TeamID), " +
                 "FOREIGN KEY (Team2) REFERENCES Teams(TeamID), " +
@@ -103,12 +103,18 @@ public class TeamDatabase extends SQLiteOpenHelper{
         cv.put(COL_2, teamName);
         cv.put(COL_3, teamComments);
         long result = db.insert(TEAMS_TABLE_NAME, null, cv);
-        if(result == -1){
-            return false;
-        }
-        else{
-            return true;
-        }
+        return result != -1;
+    }
+
+    public Integer getLastID(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM " + TEAMS_TABLE_NAME + " ORDER BY TeamID DESC LIMIT 1", null);
+        return res.getInt(0);
+    }
+
+    public Integer removeTeam(String ID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(TEAMS_TABLE_NAME, "TeamID = " + ID, null);
     }
 
     public boolean addTourn4(String tournamentName, int team1, int team2, int team3, int team4, String tournamentStyle){
@@ -122,12 +128,7 @@ public class TeamDatabase extends SQLiteOpenHelper{
         cv.put(TOUR4_7, tournamentStyle);
 
         long result = db.insert(TOURNAMENTS_4_TABLE_NAME, null, cv);
-        if(result == -1){
-            return false;
-        }
-        else{
-            return true;
-        }
+        return result != -1;
     }
 
 //    public boolean addTourn8(String tournamentName, String tournamentType, int team1, int team2, int team3, int team4, int team5, int team6, int team7, int team8 ,int team1Status, int team2Status, int team3Status, int team4Status, int team5Status, int team6Status, int team7Status, int team8Status){

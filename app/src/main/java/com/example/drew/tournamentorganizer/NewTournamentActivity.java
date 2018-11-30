@@ -22,7 +22,7 @@ public class NewTournamentActivity extends AppCompatActivity {
     }
 
     private void configureCancelButton(){
-        Button cancelButton = (Button) findViewById(R.id.cancelButton);
+        Button cancelButton = findViewById(R.id.cancelButton);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,11 +33,11 @@ public class NewTournamentActivity extends AppCompatActivity {
     }
 
     private void configureSaveButton(){
-        Button saveButton = (Button) findViewById(R.id.saveButton);
+        Button saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            TextView tournamentName = (TextView)  findViewById(R.id.tournamentName);
+            TextView tournamentName = findViewById(R.id.tournamentName);
             setResult(Activity.RESULT_OK,
                 new Intent().putExtra("tournamentName", tournamentName.getText().toString()));
             finish();

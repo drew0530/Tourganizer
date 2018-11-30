@@ -7,7 +7,7 @@
     tools:context="com.example.drew.tournamentorganizer.NewTeamActivity">
 
     <EditText
-        android:id="@+id/teamName"
+        android:id="@+id/new_team_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/ic_person_black_24dp" />
 
     <Button
-        android:id="@+id/cancelButton"
+        android:id="@+id/new_team_cancel_button"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toStartOf="@+id/saveButton" />
 
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/new_team_save_button"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
-        android:id="@+id/teamComments"
+        android:id="@+id/new_team_comments"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
