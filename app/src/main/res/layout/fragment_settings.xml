@@ -3,12 +3,23 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp">
+    android:padding="16dp">
 
     <TextView
         android:id="@+id/info_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_settings" />
+        android:text="@string/title_settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    <Button
+        android:id="@+id/button_dark_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Theme"/>
+    <Button
+        android:id="@+id/button_light_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Theme"/>
 
 </LinearLayout>
