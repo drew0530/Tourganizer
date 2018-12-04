@@ -69,17 +69,16 @@ public class TeamListFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == ADD_TEAM_REQUEST) {
             // Make sure the request was successful
-            if(resultCode == RESULT_OK){
+            if(resultCode == 900){
                 System.out.println("INTENT DATA : " + data.getStringExtra("NEW_TEAM_ID") + " " + data.getStringExtra("NEW_TEAM_NAME") + " " + data.getStringExtra("NEW_TEAM_COMMENTS"));
                 // add the data into a new card
                 cardList.add( new TeamCard(
-                        Integer.parseInt(data.getStringExtra("NEW_TEAM_ID")),
+                        adapter.getItemCount(),
                         data.getStringExtra("NEW_TEAM_NAME"),
                         data.getStringExtra("NEW_TEAM_COMMENT")
                 ));
                 adapter.notifyDataSetChanged();
-                recyclerView.setAdapter(adapter);
-                recyclerView.invalidate();
+                System.out.println("done------------------");
             }
 
         }

@@ -11,15 +11,5 @@
         android:layout_height="wrap_content"
         android:text="@string/title_settings"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-    <Button
-        android:id="@+id/button_dark_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dark Theme"/>
-    <Button
-        android:id="@+id/button_light_theme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Light Theme"/>
 
 </LinearLayout>

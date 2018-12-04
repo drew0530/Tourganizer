@@ -29,6 +29,7 @@ public class NewTeamActivity extends AppCompatActivity {
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setResult(RESULT_CANCELED, getIntent());
                 finish();
             }
         });
@@ -47,10 +48,11 @@ public class NewTeamActivity extends AppCompatActivity {
                     DatabaseHelper db = new DatabaseHelper(getBaseContext());
                     db.addTeam(teamName.getText().toString(), teamComments.getText().toString());
 
+                    Intent i = getIntent();
                     //pass data back to the parent activity
-                    getIntent().putExtra("NEW_TEAM_NAME",teamName.getText().toString());
-                    getIntent().putExtra("NEW_TEAM_COMMENTS", teamComments.getText().toString());
-                    setResult(900,getIntent());
+                    i.putExtra("NEW_TEAM_NAME",teamName.getText().toString());
+                    i.putExtra("NEW_TEAM_COMMENTS", teamComments.getText().toString());
+                    setResult(900, i);
                     finish();
                 }else{
                     Toast.makeText(getBaseContext() ,"Please at least include a team name", Toast.LENGTH_SHORT).show();

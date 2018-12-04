@@ -22,20 +22,6 @@ public class SettingsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_settings, null);
-        Button darkButton = getActivity().findViewById(R.id.button_dark_theme);
-        Button lightButton = getActivity().findViewById(R.id.button_light_theme);
-//        darkButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });;
-//        lightButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });;
         return view;
     }
 
